@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+    <string name="toast_tip">我被点击了!</string>
 </resources>
