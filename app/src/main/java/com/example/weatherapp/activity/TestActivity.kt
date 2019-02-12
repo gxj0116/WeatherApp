@@ -1,7 +1,8 @@
-package com.example.weatherapp
+package com.example.weatherapp.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.weatherapp.R
 import com.example.weatherapp.utils.ToastUtils
 
 import kotlinx.android.synthetic.main.activity_test.*;
