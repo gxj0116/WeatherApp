@@ -1,0 +1,134 @@
+4、变量和属性
+    4.1 基本类型
+        (1) 数字类型中不会自动转型。
+        (2) 字符（Char）不能直接作为一个数字来处理。
+        (3) 位运算也有一点不同。
+            在Android中，我们经常在 flags 中使用“或”，所以我使用"and"和"or来举例：
+                // Java
+                int bitwiseOr = FLAG1 | FLAG2;
+                int bitwiseAnd = FLAG1 & FLAG2
+                // Kotlin
+                val bitwiseOr = FLAG1 or FLAG2
+                val bitwiseAnd = FLAG1 and FLAG2
+        (4) 字面上可以写明具体的类型。
+        (5) 一个String可以像数组那样访问，并且被迭代：
+            示例1：
+            val s = "Example"
+            val c = s[2] // 这是一个字符'a'
+
+            示例2：
+            // 迭代String
+            val s = "Example"
+            for(c in s){
+            print(c)
+            }
+
+    4.2 变量
+        可变(var)和不可变(val)的变量。
+
+    4.3 属性
+
+    4.4 Anko是什么?
+    4.5 开始使用Anko?
+    4.6 扩展函数
+    4.7 执行一个网络请求
+        注意：一定要声明网络权限
+            <uses-permission android:name="android.permission.INTERNET" />
+
+    4.8 在主线程以外执行请求
+5、数据类
+    5.1 额外的函数
+    5.2 复制一个数据类
+    5.3 映射对象到变量中
+    5.4 转换json到数据类
+    5.5 构建domain层
+    5.6 在UI中绘制数据
+6、操作符重载
+    一元操作符
+        操作符         函数
+        +a              a.unaryPlus()
+        -a              a.unaryMinus()!
+        a               a.not()
+        a++             a.inc()
+        a--             a.dec
+    6.1 例子
+7、Lambdas
+	7.1
+	7.2 ForecastListAdapter的click listener
+	7.3 扩展语言
+8、可见性修饰符
+	8.1 修饰符
+		private
+		protected
+		internal
+		public
+	8.2 构造器
+		所有的构造器函数默认都是public的
+
+		class C private constructor(a: Int) {}
+
+	8.3 润色我们的代码
+9、Kotlin Android Extensions
+	Activities或者Fragments中使用Android Extensions:
+		import kotlinx.android.synthetic.activity_main.*;
+	Views中使用Android Extensions:
+		import kotlinx.android.synthetic.view_item.view.*;
+9、Application单例化和属性的Delegated
+	9.1 Application单例化
+	9.2 委托属性
+	9.3 标准委托
+	9.4 怎么去创建一个自定义的委托
+	9.5 重新实现Application单例化
+10、创建一个SQLiteOpenHelper
+11、集合和函数操作符
+12、从数据库中保存或查询数据
+13、Kotlin中的null安全
+14、Flow control和ranges
+15、创建一个详情界面
+16、泛型
+17、设置界面
+18、测试你的App
+19、其它概念
+	19.1 内部类
+	19.2 枚举
+	19.3 密封(Sealed)类
+	19.4 异常(Exceptions)
+20、结尾
+	一个主/从UI, 通过API通信, 数据库存储
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
