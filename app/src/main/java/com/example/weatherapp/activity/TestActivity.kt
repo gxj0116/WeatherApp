@@ -3,6 +3,9 @@ package com.example.weatherapp.activity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.weatherapp.R
+import com.example.weatherapp.test.Day
+import com.example.weatherapp.test.Icon
+import com.example.weatherapp.test.Outer
 import com.example.weatherapp.utils.ToastUtils
 
 import kotlinx.android.synthetic.main.activity_test.*;
@@ -20,6 +23,17 @@ class TestActivity : AppCompatActivity() {
         //给TextView设置内容
         first.text = getContent();
         second.text = getContent("Hello", "Java");
+
+        //Kotlin 内部类的使用
+        var num1 = Outer.Nested().foo()
+        var num2 = Outer().Nested2().foo()
+        inner.text = num1.toString() + "--" + num2;
+
+        //Kotlin 枚举的使用
+        weekday.text = Day.MONDAY.toString() +" -- "+ Day.SUNDAY.name
+
+        res.text = Icon.valueOf("SEARCH").name +" --- "+ Icon.valueOf("SEARCH").res
+
 
         //给Button设置点击事件
         toast.setOnClickListener {
